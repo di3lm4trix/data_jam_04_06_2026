@@ -1,0 +1,8 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "/^cd \"c:\\\\Users\\\\Alex Dielma\\\\the_hat\\\\data_jam\" && python -c \"\nimport csv\n\n# Get unique countries from users\\.csv\ncountries = set\\(\\)\nwith open\\('data/users\\.csv', newline='', encoding='utf-8'\\) as f:\n    reader = csv\\.DictReader\\(f\\)\n    for row in reader:\n        countries\\.add\\(row\\['country_code'\\]\\)\n\n# Get countries from shipping_regions\\.csv\nwith open\\('data/shipping_regions\\.csv', newline='', encoding='utf-8'\\) as f:\n    reader = csv\\.DictReader\\(f\\)\n    for row in reader:\n        countries\\.add\\(row\\['country_code'\\]\\)\n\nprint\\(','\\.join\\(sorted\\(countries\\)\\)\\)\n\"$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
+}
